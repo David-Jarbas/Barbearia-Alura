@@ -1,0 +1,296 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-image: url("image/fundo-preto.webp");
+    padding: 22px 0;
+}
+
+.caixa {
+    width: 940px;
+    position: relative; /*"sobe" a caixa, permitindo que o menu fique dentro da mesma*/
+    margin: 0 auto; /*ajusta o espaço externo permitindo que a caixa fique centralizada no header*/
+}
+
+.menu {
+    position: absolute; /*"levanta" o conteúdo para que eu possa mover para todo o canto ta página*/
+    top: 50%;
+    right: 0;
+}
+
+.menu a:hover {
+    color:#C78C19;
+    text-decoration: underline;
+}
+
+.nome-menu, a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bolder;
+    color: #FFFFFF;
+    padding-left: 5px;
+    display: inline-block;
+}
+
+                    /* PÁGINA INDEX*/
+
+.banner {
+    width: 100%;
+    height: 520px;
+}
+
+.imagem-utensilio {
+    width: 120px;
+    float: left; /*sobe a imagem, mas fica uma "sombra" que impede do texto ficar por baixo*/
+    clear: left;
+    margin: 0 1em 1em 0;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em; /*o dobro do texto base*/
+    margin: 0 0 1em;
+    clear: left;
+    font-weight: bold;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #ffffff;
+    /*colocado o antigo tamanho do main, para que o degradê pegue a page de uma ponta a outra*/
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#ffffff, #888888);
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.beneficios {
+    padding: 4em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+ .lista-beneficios {
+ width: 40%; /*dando limite a borda da lista*/
+    /*margin-right: 15%;*/
+ display: inline-block; /* faz com que a lista tenha um espaçamento limitado e nao completo da pasta, fazendo com que a imagem suba e fique ao lado*/
+ vertical-align: top; /*tudo no CSS éa linhado por baixo, esta propriedade faz com que seja alinhado pela linha de cima*/
+}
+
+.itens {
+    line-height: 1.5em;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+    content: "★";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 0.6;
+    transition: 400ms;
+    box-shadow: #000000 10px 10px 10px;
+}
+
+.imagem-beneficios:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.video {
+    width: 560px;
+    /*display: block;*/ /*display block neste caso, só dar certo quando coloco a classe no iframe*/
+    margin: 2em auto;
+}
+
+                        /* PÁGINAS PRODUTOS*/
+
+.produtos {
+    width: 940px;
+    margin: 0 auto; /*centraliza a imagem*/
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block; /*alinha as imagens da lista uma do lado da outra*/
+    vertical-align: top; /*alinhar pela linha de cima*/
+    margin: 0 1.5%;
+    text-align: center; /*alinha todos os itens dentro do bloco LI ao centro*/
+    border: 2px solid #000000;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 30%; /*todo conteudo li vai ocupar 1 terço da página*/
+    box-sizing: border-box; /*coloca os pixels do padding dentro dos 30%*/
+}
+
+.produtos li:active { /*muda a cor da borda ao click*/
+    border-color: #C78C19;
+}
+
+.produtos li h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.texto {
+    font-size: 18px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+                            /*PÁGINA CONTATO*/
+
+
+form {
+    width: 58.75rem;
+    margin: 40px auto;
+}
+
+form  label, form legend {
+    display: block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.botao {
+    margin-bottom: 25px;
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.botao:hover {
+    transform: scale(1.2); /*trasforma tudo no botão em 20%*/
+    background: darkorange;
+}
+
+.tabela-linha th {
+    background: dimgray;
+    color: white;
+}
+
+ .tabela-linha td, th {
+     padding: 7px 15px;
+     border: 1px solid black;
+     font-size: 19px;
+}
+
+footer {
+    background-image: url("image/fundo-preto.webp");
+    padding: 20px 0;
+}
+
+.imagem-footer {
+    display: block;
+    margin: 0 auto;
+}
+
+footer p {
+    text-align: center; /*centraliza o texto do footer*/
+    color: white;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .menu {
+        position: static;
+        margin-left: 1rem;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+
+    .produtos li {
+        display: block;
+        margin: 20px 0 20px 4rem;
+    }
+
+    form, label {
+        text-indent: 20px;
+    }
+
+    .input-padrao {
+        text-align: center;
+        display: block;
+        margin: 0 0 0 20px;
+        padding: 10px 25px;
+        width: 30%;
+        border-radius: 5px;
+    }
+
+    .botao {
+        width: 25%;
+        margin-left: 10%;
+    }
+
+    table {
+        margin-left: 10%;
+    }
+}
